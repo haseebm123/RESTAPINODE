@@ -6,3 +6,9 @@ exports.SignUpValidation = [
   check("password", "Password is required").isLength({min:5}),
 ];
 
+exports.SignInValidation = [
+   check("email", "Please enter a valid mail")
+    .isEmail() ,
+  check("password", "Password is required").isLength({ min: 5 }),
+];
+
